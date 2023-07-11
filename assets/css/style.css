@@ -1,0 +1,327 @@
+/* This CSS files was updated to reflect the refactoring of the index.html main project file.  Multiple <div> tags were replaced inthe HTML with more 
+appropriate HTML semantic tags such as <haeder>, <main>, <figure>, <figurecaption>, <aside>, and <nav>.  Corressponding semantic tag classes were added where 
+appropriate.
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+/*  Date: 7/5/2023  Author: Jim  McGreevy
+    The "main" new class was added to file in rersponse to the adding of the 
+    <main> tag in the index.html file.  This class replicates the css properties of
+    the existing "content" class that already exisited.
+*/
+main {
+    /*width: 75%; */
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*  Date: 7/5/2023  Author: Jim  McGreevy
+    The "header" class was added to file in rersponse to the adding of the 
+    <header> tag in the index.html file.  This class replicates the css properties of
+    the existing ".header" class that already exisited.  Additional selectors of h1, .seo, nav, ul, 
+    and li were also added to reflect the semantix tags added to the index.html file.
+*/
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 30px;
+}
+
+header h1 .seo {
+    color: #d9dcd6;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+.banner-section {
+    height: 75px;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-right:25px;
+    color: white;
+    font-size: 35px;
+    text-align: right;
+
+    background-image: url("../images/banner-abstract-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.banner-section  figcaption {
+    height: 75px;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-right:25px;
+    color: white;
+    font-size: 35px;
+    text-align: right;
+    background-image: url("../images/banner-abstract-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/*  Date: 7/5/2023  Author: Jim  McGreevy
+   The "content" class is no longer being referenced from the index.html,
+   was replaced by the "header" class.
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+*/
+
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/*  Date: 7/5/2023  Author: Jim  McGreevy
+   Consolidated the 3 "benefit-xxxx" classes for more effcient code.
+*/
+.benefit-lead, .benefit-brand, .benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+ 
+
+
+
+/*  Date: 7/5/2023  Author: Jim  McGreevy
+   Consolidated the 3 "benefit-xxxx h3" classes for more effcient code.
+*/
+.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.benefit-lead img, .benefit-brand img, .benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+
+.horiseon {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 500px;
+    width: 1000px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+.portfolio, .place-holder {
+    margin-bottom: 5px;
+    padding: 5px;
+    height: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.horiseon img {
+    max-height: 400px;
+}
+
+.portfolio img, .place-holder img {
+    max-height: 75px;
+}
+
+.horiseon h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.portfolio h2, .place-holder h2 {
+    margin-bottom: 20px;
+    font-size: 12px;
+    display: inline;
+}
+.portfolio p, .place-holder p {
+    margin-bottom: 20px;
+    font-size: 12px;
+    display: inline;
+}
+/*.portfolio figure, .place-holder figure {
+     display: inline;
+}
+*/
+.about-me {
+    display: flex;
+    /*flex-wrap: wrap; */
+
+}
+.about-me h2 {
+    border-right: 5px solid black;
+    margin: 5px;
+    padding: 15px;
+    /*flex-wrap: wrap; */
+
+} 
+
+.my-work {
+    display: flex;
+   /* flex-wrap: wrap; */
+
+}
+.my-work h2 {
+    border-right: 5px solid black;
+    margin: 15px;
+    padding: 5px;
+    align-items: center;
+    /*flex-wrap: wrap; */
+
+} 
+
+
+.contact {
+    display: flex;
+    /*flex-wrap: wrap; */
+
+}
+.contact a {
+
+    font-size: 24px;
+    width: 200px;
+    color: black;
+    margin: 15px;
+    padding: 5px;
+
+}
+.contact h2 {
+    border-right: 5px solid black;
+    margin: 5px;
+    padding: 5px;
+
+} 
+.resume {
+    display: flex;
+    /*flex-wrap: wrap; */
+
+}
+.resume h2 {
+    border-right: 5px solid black;
+    margin: 5px;
+    padding: 5px;
+
+} 
+
+.flex-section {
+   display: flex; 
+    flex-wrap: wrap; 
+
+}
+
+
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+/* Display the links when the parent is in a hover state */
+.horiseon:hover {
+    background-color: grey;
+    color: cadetblue;
+  }
+.horiseon:active {
+    font-size: 180%;
+    box-shadow: 0 0 10px inset;
+  }
+.horiseon:focus {
+    outline: none;
+    border-color: red;
+
+  }
+
+.portfolio:hover {
+    background-color: grey;
+    color: cadetblue;
+  }
+.portfolio:active {
+    font-size: 180%;
+    box-shadow: 0 0 10px inset;
+  }
+.portfolio:focus {
+    outline: none;
+    border-color: red;
+
+  }
+ .place-holder:hover {
+    background-color: grey;
+    color: cadetblue;
+  }
+.place-holder:active {
+    font-size: 180%;
+    box-shadow: 0 0 10px inset;
+  }
+.place-holder:focus {
+    outline: none;
+    border-color: red;
+
+  }
