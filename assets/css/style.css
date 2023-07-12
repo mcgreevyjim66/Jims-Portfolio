@@ -20,6 +20,7 @@ body {
 */
 main {
     /*width: 75%; */
+    display: flex;
     width: 75%;
     display: inline-block;
     margin-left: 20px;
@@ -43,27 +44,23 @@ header h1 {
     font-size: 30px;
 }
 
-header h1 .seo {
-    color: #d9dcd6;
-}
-
 header nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
+    /*float: right; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 header nav ul {
     list-style-type: none;
+    float: right;
+    line-height: 10px;
 }
 
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
-
 a {
     color: #ffffff;
     text-decoration: none;
@@ -72,6 +69,15 @@ a {
 p {
     font-size: 16px;
 }
+.avatar {
+    float: left;
+     margin-right: 5px;
+     width: 100px; /* Adjust the width as desired */
+     height: auto;
+ }
+
+
+
 
 
 .banner-section {
@@ -89,6 +95,7 @@ p {
 }
 .banner-section  figcaption {
     height: 75px;
+    line-height: 100px;
     width: 100%;
     margin-bottom: 25px;
     margin-right:25px;
@@ -102,7 +109,7 @@ p {
 
 
 .float-left {
-    float: left;
+   float: left;
     margin-right: 25px;
 }
 
@@ -111,91 +118,50 @@ p {
     margin-left: 25px;
 }
 
-/*  Date: 7/5/2023  Author: Jim  McGreevy
-   The "content" class is no longer being referenced from the index.html,
-   was replaced by the "header" class.
-
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-*/
-
-
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-/*  Date: 7/5/2023  Author: Jim  McGreevy
-   Consolidated the 3 "benefit-xxxx" classes for more effcient code.
-*/
-.benefit-lead, .benefit-brand, .benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
- 
-
-
-
-/*  Date: 7/5/2023  Author: Jim  McGreevy
-   Consolidated the 3 "benefit-xxxx h3" classes for more effcient code.
-*/
-.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-
-.benefit-lead img, .benefit-brand img, .benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
 
 .horiseon {
-    margin-bottom: 20px;
-    padding: 50px;
+    margin: 0px;
+    padding: 0px;
     height: 500px;
     width: 1000px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: #d9dcd6;
+    color: black;
+    font-size: 30px;
+}
+.horiseon img {
+    max-height: 400px;
+    border: 5px solid black;
+}
+.horiseon h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 .portfolio, .place-holder {
     margin-bottom: 5px;
     padding: 5px;
     height: 100px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.horiseon img {
-    max-height: 400px;
+    background-color: #d9dcd6;
+    color: black;
 }
 
 .portfolio img, .place-holder img {
     max-height: 75px;
+    color: black;
 }
 
-.horiseon h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+
 .portfolio h2, .place-holder h2 {
     margin-bottom: 20px;
     font-size: 12px;
     display: inline;
 }
+.portfolio, a {
+    max-height: 75px;
+    color: black;
+}
+
 .portfolio p, .place-holder p {
     margin-bottom: 20px;
     font-size: 12px;
@@ -217,17 +183,23 @@ p {
     /*flex-wrap: wrap; */
 
 } 
+.about-me p {
+  color: black;
+  font-size: 20px;
+  margin: 5px;
+  padding: 15px;
 
+} 
 .my-work {
     display: flex;
-   /* flex-wrap: wrap; */
+    /* flex-wrap: wrap; */ 
 
 }
 .my-work h2 {
     border-right: 5px solid black;
-    margin: 15px;
-    padding: 5px;
-    align-items: center;
+    margin: 5px;
+    padding: 15px;
+   /* align-items: center; */
     /*flex-wrap: wrap; */
 
 } 
@@ -241,9 +213,19 @@ p {
 .contact a {
 
     font-size: 24px;
-    width: 200px;
+    width: auto;
     color: black;
-    margin: 15px;
+    margin: 5px;
+    padding: 5px;
+
+}
+.contact p {
+
+    font-size: 24px;
+    text-decoration: underline;
+    width: auto;
+    color: black;
+    margin: 5px;
     padding: 5px;
 
 }
@@ -265,9 +247,20 @@ p {
 
 } 
 
+.resume a {
+   text-align: center;
+   display: block;
+    font-size: 20px;
+   color: black;
+   margin: 5px;
+   padding: 5px;
+   
+
+}
+
 .flex-section {
-   display: flex; 
-    flex-wrap: wrap; 
+  display: flex; 
+   flex-wrap: wrap;   
 
 }
 
@@ -278,6 +271,8 @@ footer {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    background-color: #2a607c;
+    color: #ffffff;
 }
 
 footer h2 {
@@ -325,3 +320,36 @@ footer h2 {
     border-color: red;
 
   }
+
+ /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+  header {
+    background: #772014;
+  }
+}
+
+
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+    header {
+        flex-wrap: column;
+      }
+    #banner-section {
+        display: flex;
+        flex-wrap: column;
+      }
+
+       nav {
+    flex-wrap: column;
+  }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: #8ac4ff;
+  }
+}
